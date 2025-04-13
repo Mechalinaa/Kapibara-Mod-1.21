@@ -16,40 +16,36 @@ public class ModBlocks {
 
     public static final Block ORANGEWOOD_WOOD = registerBlock("orangewood_wood",
             new PillarBlock(
-                    AbstractBlock.Settings.copy(Blocks.OAK_WOOD)).getSettings());
+                    AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
     public static final Block ORANGEWOOD_LOG = registerBlock("orangewood_log",
             new PillarBlock(
-                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)).getSettings());
+                    AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block STRIPPED_ORANGEWOOD_WOOD = registerBlock("stripped_orangewood_wood",
             new PillarBlock(
-                    AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)).getSettings());
+                    AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block STRIPPED_ORANGEWOOD_LOG = registerBlock("stripped_orangewood_log",
             new PillarBlock(
-                    AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)).getSettings());
+                    AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
 
     public static final Block ORANGEWOOD_PLANKS = registerBlock("orangewood_planks",
             new Block(
-                    AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)).getSettings());
-//    public static final Block ORANGEWOOD_LEAVES = registerBlock("orangewood_leaves",
-//            new LeavesBlock(
-//                    AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+                    AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+    public static final Block ORANGEWOOD_LEAVES = registerBlock("orangewood_leaves",
+            new LeavesBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
 //    public static final Block ORANGEWOOD_SAPLING = registerBlock("orangewood_sapling",
 //            new SaplingBlock(
 //                    ,AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
-    private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
-        RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(KapibaraMod.MOD_ID, name));
-        Block block = new Block(blockSettings.registryKey(key));
+    private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, key, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(KapibaraMod.MOD_ID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block) {
-        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(KapibaraMod.MOD_ID, name));
-        BlockItem item = new BlockItem(block, new Item.Settings().registryKey(key));
-        Registry.register(Registries.ITEM, key, item);
-
+        Registry.register(Registries.ITEM, Identifier.of(KapibaraMod.MOD_ID, name),
+                new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerModBlocks() {

@@ -1,4 +1,6 @@
 {
   "item.kapibaramod.orange_fruit": "Orange",
-  "item.kapibaramod.orangewood_wood": "Orange Wood"
+  "block.kapibaramod.orangewood_wood": "Orange Wood",
+  "itemgroup.kapibaramod.orange_items": "Orange Items",
+  "itemgroup.kapibaramod.orangewood_blocks": "Orange Wood Blocks"
 }

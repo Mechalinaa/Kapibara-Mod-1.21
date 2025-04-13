@@ -11,9 +11,9 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-
-    public static final Item ORANGE_FRUIT=registerItem("orange_fruit",new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(KapibaraMod.MOD_ID,"orange_fruit")))));
+    
+    public static final Item ORANGE_FRUIT=registerItem("orange_fruit",new Item(new Item.Settings().
+            food(ModFoodComponents.ORANGE_FRUIT)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(KapibaraMod.MOD_ID, name), item);
