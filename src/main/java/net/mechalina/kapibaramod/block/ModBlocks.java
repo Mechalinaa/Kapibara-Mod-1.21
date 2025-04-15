@@ -53,6 +53,10 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.ORANGEWOOD_WOOD);
+            entries.add(ModBlocks.ORANGEWOOD_PLANKS);
+            entries.add(ModBlocks.ORANGEWOOD_LOG);
+            entries.add(ModBlocks.STRIPPED_ORANGEWOOD_LOG);
+            entries.add(ModBlocks.STRIPPED_ORANGEWOOD_WOOD);
         });
     }
 

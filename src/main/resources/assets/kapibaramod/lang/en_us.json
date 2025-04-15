@@ -1,6 +1,11 @@
 {
   "item.kapibaramod.orange_fruit": "Orange",
   "block.kapibaramod.orangewood_wood": "Orange Wood",
+  "block.kapibaramod.orangewood_log": "Orange Log",
+  "block.kapibaramod.stripped_orangewood_log": "Stripped Orange Log",
+  "block.kapibaramod.stripped_orangewood_wood": "Stripped Orange Wood",
+  "block.kapibaramod.orangewood_planks": "Orange Planks",
+  "block.kapibaramod.orangewood_leaves": "Orange Leaves",
   "itemgroup.kapibaramod.orange_items": "Orange Items",
   "itemgroup.kapibaramod.orangewood_blocks": "Orange Wood Blocks"
 }
