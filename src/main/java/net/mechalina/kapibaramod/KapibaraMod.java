@@ -2,6 +2,7 @@ package net.mechalina.kapibaramod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.mechalina.kapibaramod.block.ModBlocks;
 import net.mechalina.kapibaramod.item.ModItemGroups;
 import net.mechalina.kapibaramod.item.ModItems;

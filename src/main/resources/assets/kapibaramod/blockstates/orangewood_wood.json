@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "kapibaramod:block/orangewood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "kapibaramod:block/orangewood_wood"
+    },
+    "axis=z": {
+      "model": "kapibaramod:block/orangewood_wood",
+      "x": 90
     }
   }
 }
