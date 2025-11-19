@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kapibaramod:block/stripped_orangewood_log_top",
+    "side": "kapibaramod:block/stripped_orangewood_log"
+  }
+}

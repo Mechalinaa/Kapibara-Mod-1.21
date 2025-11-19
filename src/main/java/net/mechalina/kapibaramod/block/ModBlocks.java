@@ -58,6 +58,9 @@ public class ModBlocks {
             entries.add(ModBlocks.STRIPPED_ORANGEWOOD_LOG);
             entries.add(ModBlocks.STRIPPED_ORANGEWOOD_WOOD);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModBlocks.ORANGEWOOD_LEAVES);
+        });
     }
 
 }
